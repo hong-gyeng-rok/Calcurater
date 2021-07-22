@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calcurater</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <table border="1">
+          <tr>
+              <td colspan="4">
+                  <input type="text" id="displayJs" class="display">
+              </td>
+          </tr>
+          <tr>
+                  <td colspan="4">
+                      <input type="text" id="resultJs" class="result">
+                  </td>
+          </tr>
+          <tr>
+              <th colspan="3" onclick="reset()">ac</th>
+              <th onclick="calcurater()">=</th>
+          </tr>
+          <tr>
+              <td onclick="add(1)">1</td>
+              <td onclick="add(2)">2</td>
+              <td onclick="add(3)">3</td>
+              <td onclick="add('+')">+</td>
+          </tr>
+          <tr>
+              <td onclick="add(4)">4</td>
+              <td onclick="add(5)">5</td>
+              <td onclick="add(6)">6</td>
+              <td onclick="add('-')">-</td>
+          </tr>
+          <tr>
+              <td onclick="add(7)">7</td>
+              <td onclick="add(8)">8</td>
+              <td onclick="add(9)">9</td>
+              <td onclick="add('*')">*</td>
+          </tr>
+          <tr>
+              <td colspan="3" onclick="add(0)">0</td>
+              <td onclick="add(/)">/</td>
+          </tr>
+      </table>
+      <script src="script.js"></script>
+  </body>
+</html>
